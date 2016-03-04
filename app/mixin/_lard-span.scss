@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@mixin lard-span($property: flex, $span: auto) {
+  @if $property == flex {
+    @if $span == auto {
+      flex: $lard-span--flex-grow $lard-span--flex-shrink auto;
+      max-width: 100%;
+    }
+    // number,px,em
+    @if type-of($span) == number {
+      //type of number
+      @if unitless($span) {
+        flex: $lard-span--flex-grow $lard-span--flex-shrink lard-calc-lard($span);
+        max-width: lard-calc-lard($span);
+      } @else if unit($span) == px {
+        flex: $lard-span--flex-grow $lard-span--flex-shrink $span;
+        max-width: $span;
+      }
+    }
+
+  } @else if $property == basis {
+    @if $span == auto {
+      flex-basis: auto;
+      max-width: 100%;
+    }
+    // number,px,em
+    @if type-of($span) == number {
+      //type of number
+      @if unitless($span) {
+        flex-basis: lard-calc-lard($span);
+        max-width: lard-calc-lard($span);
+      } @else if unit($span) == px {
+        flex-basis: $span;
+        max-width: $span;
+      }
+    }
+  }
+}

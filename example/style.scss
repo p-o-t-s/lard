@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Import Lard */
+@import "../lard";
+
+.lard-container {
+  @include lard-container();
+  &-row {
+    @include lard-row();
+    &__col {
+      @include lard-columns(12) {
+        background-color: cornflowerblue;
+        border: 1px solid darkslategray;
+        height: 3em;
+      }
+      &--half {
+        @include lard-columns(2) {
+          background-color: red;
+        }
+      }
+      &--300 {
+        @include lard-column(300px) {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+
+
+

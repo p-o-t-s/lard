@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@mixin lard-column($span: auto) {
+  @include lard-span(basis, $span);
+
+  @content;
+}

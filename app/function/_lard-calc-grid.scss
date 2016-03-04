@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@function lard-calc-lard($span: 1) {
+  @return (100% / $span);
+}

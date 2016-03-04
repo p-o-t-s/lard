@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@mixin lard-columns($span: auto) {
+  @include lard-span(flex, $span);
+
+  @content;
+}
+
+
+

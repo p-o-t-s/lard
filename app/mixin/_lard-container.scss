@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@mixin lard-container() {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  padding: {
+    right: $lard-lard--garter;
+    left: $lard-lard--garter;
+  }
+  max-width: $lard-container--max-width;
+}
