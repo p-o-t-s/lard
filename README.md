@@ -105,6 +105,11 @@ Import `_lard.scss`
 }
 ```
 
+## Feature
+
+* `offset`
+* `position`
+
 ## Browser support
 
 `Lard` is, does not have any of the vendor prefix.
