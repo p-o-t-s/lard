@@ -116,6 +116,10 @@ Import `_lard.scss`
 
 [Can I use...](http://caniuse.com/#search=flex)
 
+## log
+
+9 March 2016 : add `$no-garter` arguments for `-columns` and `-column`
+
 ## License
 
 GPLv2 or later

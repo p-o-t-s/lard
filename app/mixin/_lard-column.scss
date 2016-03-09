@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-@mixin lard-column($span: auto) {
-  @include lard-span(basis, $span);
+@mixin lard-column($span: auto, $span-use-garter: $lard-span--use-garter, $no-garter: false) {
+  // if, $no-garter is `true`,
+  // You may need to reset the garter manually
+  @include lard-span(basis, $span, $span-use-garter, $no-garter: $no-garter);
 
   @content;
 }

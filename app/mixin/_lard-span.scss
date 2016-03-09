@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
-@mixin lard-span($property: flex, $span: auto) {
+@mixin lard-span($property: flex, $span: auto, $span-use-garter: $lard-span--use-garter, $no-garter: false) {
+  @if $no-garter != true {
+    @if $span-use-garter == margin {
+      margin: {
+        right: $lard-span--garter;
+        left: $lard-span--garter;
+      }
+    } @else {
+      padding: {
+        right: $lard-span--garter;
+        left: $lard-span--garter;
+      }
+    }
+  }
+
   @if $property == flex {
     @if $span == auto {
       flex: $lard-span--flex-grow $lard-span--flex-shrink auto;
