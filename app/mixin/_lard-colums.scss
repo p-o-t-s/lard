@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@mixin lard-columns($span: auto) {
-  @include lard-span(flex, $span);
+@mixin lard-columns($span: auto, $span-use-garter: $lard-span--use-garter, $no-garter: false) {
+  @include lard-span(flex, $span, $span-use-garter, $no-garter: $no-garter);
 
   @content;
 }

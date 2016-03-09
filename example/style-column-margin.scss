@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Import Lard */
+@import "../lard";
+
+.lard-container {
+  @include lard-container();
+  &-row {
+    @include lard-row();
+    &__col {
+      @include lard-columns(12) {
+        background-color: cornflowerblue;
+        border: 1px solid darkslategray;
+        height: 3em;
+      }
+      &--garter-margin {
+        @include lard-columns(2, margin) {
+          background-color: red;
+        }
+      }
+      &--no-garter {
+        @include lard-column(2, $no-garter: true) {
+          /* if, $no-garter is `true`,
+          You may need to reset the garter manually */
+          margin-right: 0;
+          margin-left: 0;
+
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+
+
+

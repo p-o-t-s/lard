@@ -21,17 +21,19 @@
   border: 1px solid darkslategray;
   height: 3em;
 }
-.lard-container-row__col--half {
-  padding-right: 10px;
-  padding-left: 10px;
+.lard-container-row__col--garter-margin {
+  margin-right: 10px;
+  margin-left: 10px;
   flex: 0 0 50%;
   max-width: 50%;
   background-color: red;
 }
-.lard-container-row__col--300 {
-  padding-right: 10px;
-  padding-left: 10px;
-  flex-basis: 300px;
-  max-width: 300px;
-  align-self: flex-end;
+.lard-container-row__col--no-garter {
+  flex-basis: 50%;
+  max-width: 50%;
+  /* if, $no-garter is `true`,
+  You may need to reset the garter manually */
+  margin-right: 0;
+  margin-left: 0;
+  background-color: black;
 }
