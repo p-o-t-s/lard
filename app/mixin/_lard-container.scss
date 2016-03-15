@@ -9,4 +9,6 @@
     left: $lard-lard--garter;
   }
   max-width: $lard-container--max-width;
+
+  @content;
 }

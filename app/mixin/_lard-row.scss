@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@mixin lard-row($flex-wrap:wrap) {
+@mixin lard-row($flex-wrap:$lard-row--flex-wrap) {
   display: flex;
   flex-wrap: $flex-wrap;
 
