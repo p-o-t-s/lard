@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@mixin lard-row($flex-w:wrap) {
+@mixin lard-row($flex-wrap:wrap) {
   display: flex;
-  flex-wrap: $flex-w;
+  flex-wrap: $flex-wrap;
 
   margin: {
     right: $lard-span--garter * -1;
