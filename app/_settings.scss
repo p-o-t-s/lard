@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-$lard-lard--garter: 10px;
-$lard-container--max-width: 100%;
-$lard-span--use-garter: padding;
-$lard-span--garter: 10px;
-$lard-span--flex-grow: 0;
-$lard-span--flex-shrink: 0;
+$lard-lard--garter: 10px !default;
+$lard-container--max-width: 100% !default;
+$lard-row--flex-wrap: wrap !default;
+$lard-span--use-garter: padding !default;
+$lard-span--garter: 10px !default;
+$lard-span--flex-grow: 0 !default;
+$lard-span--flex-shrink: 0 !default;
